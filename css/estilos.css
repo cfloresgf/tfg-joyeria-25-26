@@ -1,0 +1,733 @@
+@font-face {
+    font-family: 'Flor';
+    src: url('fontFlor.ttf');
+}
+
+body {
+    padding-top: 90px;
+    background-color: #FFFFFF;
+    color: #1F2933;
+}
+
+#logo {
+    margin-top: -15px;
+    margin-bottom: -15px;
+    margin-right: -10px;
+}
+
+#menuInicio {
+    margin: -5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+footer {
+    background-color: #0B1C2D;
+    padding: 20px;
+    text-align: center;
+    margin: -5px;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+#footer-info {
+    font-style: italic;
+    color: #EAF0FF;
+    align-content: center;
+}
+
+#acercaDe {
+    text-align: justify;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 20px 5px 20px;
+    border: 1px solid #515d69;
+    border-radius: 5px;
+}
+
+#acercaDe p {
+    font-size: small;
+    margin-bottom: 1%;
+}
+
+#acercaDe h6 {
+    margin-bottom: auto;
+}
+
+.titulo-login {
+    border-bottom: 3px solid #1C3147;
+}
+
+#categoria:hover #categoria-fotoynombre {
+    transform: scale(1.2);
+}
+
+#listaCuidado {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.titulo-carrito {
+    font-family: 'Flor';
+    color: #102A43;
+    font-weight: bold;
+}
+
+.carritoItem {
+    border-bottom: 1px solid #C4C9D1;
+    padding: 10px 0;
+}
+
+.carritoItem:last-child {
+    border-bottom: none;
+    padding-bottom: 10px;
+}
+
+.productoInfo {
+    display: flex;
+    align-items: center;
+}
+
+.productoImg {
+    width: 130px;
+    margin-right: 10px;
+}
+
+.productoNombre {
+    font-weight: bold;
+    color: #0B1C2D;
+    margin-bottom: 5px;
+}
+
+.productoPrecio {
+    color: #102A43;
+}
+
+.carritoItem .productoInfo .botones {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.subtotal {
+    font-weight: bold;
+    margin-left: auto;
+    color: #C9A24D;
+}
+
+#btnMasYMenos {
+    border: 1px solid #3D6187;
+    color: #3D6187;
+    background-color: #FFFFFF;
+}
+
+#btnMasYMenos:hover {
+    background-color: #3D6187;
+    color: #FFFFFF;
+}
+
+.carritoPagar {
+    background-color: #F1F4FD;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.carritoPagar .row {
+    padding-bottom: 10px;
+}
+
+.carritoPagar .row.verde {
+    padding-bottom: 10px;
+    color: green;
+}
+
+.carritoPagar .info {
+    color: grey;
+}
+
+.carritoPagar .btn-ok {
+    width: 100%;
+    border-radius: 5px;
+    padding: 3px;
+    margin-top: 5px;
+}
+
+.envio-gratuito {
+    color: grey;
+    border-bottom: 1px solid grey;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.envio-gratuito i {
+    margin-right: 5px;
+}
+
+.modalCompra {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11, 28, 45, 0.6);
+}
+
+.modalContenidoCompra {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border: 1px solid #C4C9D1;
+    border-radius: 10px;
+    max-width: 400px;
+    display: grid;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+}
+
+.btnCerrarModalCompra {
+    color: #102A43;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.btnCerrarModalCompra:hover,
+.btnCerrarModalCompra:focus {
+    color: #3D6187;
+    cursor: pointer;
+}
+
+.modalContenidoCompra p {
+    text-align: center;
+}
+
+.modalContenidoCompra .btn {
+    margin-bottom: 30px;
+    width: 75%;
+    justify-self: center;
+}
+
+.mis-compras {
+    margin-top: 50px;
+    max-width: 1200px;
+}
+
+.mis-compras h5 {
+    font-weight: bold;
+    color: #102A43;
+    font-family: 'Flor';
+}
+
+.mis-compras-pedido {
+    padding: 40px 0;
+}
+
+.pedidoGeneral {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0 24 82 / 20%);
+    border: 2px solid #102A43;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.pedidoGeneralSecciones {
+    margin: 5px 0;
+}
+
+#pedidoTitulos {
+    font-weight: bold;
+    color: #C9A24D;
+}
+
+.detalles-pedido {
+    max-width: 800px;
+    margin: 50px auto;
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.detalles-pedido-titulo {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #102A43;
+}
+
+.detallesPedidoSeccion {
+    margin-bottom: 20px;
+}
+
+.detallesPedidoTitulos {
+    font-weight: bold;
+    color: #0B1C2D;
+}
+
+.estado-0-color {
+    color: #F7C024;
+}
+
+.estado-1-color {
+    color: #5BCD5B;
+}
+
+.estado-2-color {
+    color: #FF4747;
+}
+
+.estado-3-color {
+    color: #6464FF;
+}
+
+.btn-exportar-PDF {
+    width: 100%;
+}
+
+.lineasDetallesPedido {
+    margin: 30px 0 10px 30px;
+    width: 90%;
+}
+
+.lineaDetallesPedido {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.lineaDetallesPedido:not(:last-child) {
+    border-bottom: 1px solid #C4C9D1;
+}
+
+.btnEditar {
+    color: #C9A24D;
+    border: 1px solid #E6D3A3;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btnEditar:hover {
+    background-color: #C9A24D;
+    color: #FFFFFF;
+}
+
+#tituloFormularios {
+    margin-top: 10px;
+    width: 25%;
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Flor';
+    font-weight: bold;
+    border-bottom: 3px solid #C9A24D;
+    color: #0B1C2D;
+}
+
+.mensajeAlerta {
+    background-color: #F8D7DA;
+    border-color: #F5C6CB;
+    color: #721C24;
+    border-radius: 0.5rem;
+    padding: 15px;
+}
+
+#iconoMensajeAlerta {
+    margin-right: 10px;
+    font-size: 1.5rem;
+    color: #721C24;
+}
+
+.modal-content {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(11, 28, 45, 0.3);
+}
+
+.modal-header {
+    background-color: #EAF0FF;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    color: #0B1C2D;
+    font-weight: bold;
+}
+
+.modal-body {
+    font-size: 1.1rem;
+    color: #102A43;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+.btnBorrarUsuario {
+    background-color: #DC3545;
+    border-color: #DC3545;
+}
+
+.btnBorrarUsuario:hover {
+    background-color: #C82333;
+    border-color: #BD2130;
+}
+
+.btn-outline-secondary {
+    color: #102A43;
+    border-color: #102A43;
+}
+
+.btn-outline-secondary:hover {
+    color: #FFFFFF;
+    background-color: #102A43;
+}
+
+.table-dark th {
+    background-color: #1c3147;
+    color: #C9A24D;
+}
+
+.btn-ok {
+    background-color: #C9A24D;
+    color: white;
+}
+
+.btn-ok:hover {
+    background-color: #AC883A;
+    color: white;
+}
+
+.btn-cancelar {
+    background-color: #102A43;
+    color: white;
+}
+
+.btn-cancelar:hover {
+    background-color: #091A2A;
+    color: white;
+}
+
+.btn-select-foto {
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.estado {
+    margin-top: 15px;
+    padding: 8px;
+    border-radius: 10px;
+    color: white;
+    width: 90px;
+    text-align: center;
+}
+
+.estado-redondo {
+    border-radius: 20px;
+}
+
+.estado-0 {
+    background-color: #F7C024;
+}
+
+.estado-1 {
+    background-color: #5BDC5B;
+}
+
+.estado-2 {
+    background-color: #FF4747;
+}
+
+.estado-3 {
+    background-color: #6464FF;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 450px;
+}
+
+.categoria-productos {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.categoria-productos a, .categoria-administracion a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.categoria-productos .card {
+    border: 2px solid #102A43;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.categoria-productos .card img {
+    height: 100px;
+    width: 100px;
+}
+
+.nombre-categoria {
+    color: #102A43;
+}
+
+.categoria-administracion {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.categoria-administracion .card {
+    border: 2px solid #102A43;
+}
+
+.categoria-administracion .card i {
+    margin-top: 10%;
+    color: #3d6187;
+}
+
+.cuidado-joyas {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.cuidado-joyas .card {
+    max-width: 1000px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #102A43;
+}
+
+.cuidado-joyas .card .imagen {
+    text-align: center;
+    align-content: center;
+}
+
+.cuidado-joyas .card .imagen img {
+    max-height: 450px;
+}
+
+.cuidado-joyas .card .texto, .table-catalogos td {
+    align-content: center;
+}
+
+.cuidado-joyas .card .texto .card-title {
+    color: #102A43;
+    padding-left: 20px;
+    font-family: 'Flor';
+    font-weight: bold;
+}
+
+.cuidado-joyas .card .texto .card-text {
+    padding: 10px;
+    margin: 20px;
+}
+
+.table-catalogos {
+    margin-top: 30px;
+}
+
+.grafico-ventas {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.grafico-ventas .card {
+    max-width: 1000px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #102A43;
+}
+
+.grafico-ventas .card h5 {
+    text-align: center;
+    font-family: 'Flor';
+    font-weight: bold;
+}
+
+.detalles-producto {
+    margin-bottom: 20px;
+}
+
+.detalles-producto .producto {
+    background-color: #FFF;
+    border: 1px solid #3D6187;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.detalles-producto .producto .titulo {
+    color: #1C3147;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.detalles-producto .producto .row {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.producto .imagen, .producto .textos {
+    align-content: center;
+}
+
+.producto .imagen img {
+    max-width: 100%;
+    height: auto;
+}
+
+.producto .textos .descripcion {
+    text-align: justify;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    color: #6C757D;
+    margin-bottom: 20px;
+}
+
+.btn-agregar-carrito {
+    width: 100%;
+}
+
+.popup-carrito {
+    position: fixed;
+    top: 100px;
+    right: 30px;
+    background-color: #0A2540;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 12px;
+    display: none;
+    z-index: 9999;
+    animation: fadeIn 0.3s ease;
+}
+
+.popup-carrito a {
+    color: #D4AF37;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.filtros select {
+    border-color: #C9A24D;
+    margin-top: 10px;
+}
+
+.filtros div {
+    text-align: center;
+    align-content: center;
+}
+
+.filtros .search-input {
+    border-color: #C9A24D;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 75%;
+    margin-top: 10px;
+}
+
+.filtros .search-button {
+    background-color: #102A43;
+    color: #F1F4FD;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.filtros .orden {
+    border-color: #C9A24D;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 75%;
+}
+
+.filtros .btn-ordenar {
+    background-color: #102A43;
+    color: #F1F4FD;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.productos .btnDetalles {
+    border-color: #C9A24D;
+    max-height: 330px;
+    max-width: 400px;
+}
+
+.productos .btnDetalles:hover {
+    border-color: #C9A24D;
+}
+
+.productos .btnDetalles img {
+    height: 200px;
+    width: 190px;
+}
+
+.enlace-registro {
+    color: #102A43;
+    font-weight: bold;
+}
+
+#acercaDe .final {
+    text-align: center;
+}
+
+.input-pwd {
+    padding-right: 40px;
+}
+
+.mostrar-pwd {
+    position: absolute;
+    top: 38px;
+    right: 12px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .cuidado-joyas .card .texto .card-text {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+    #footer-info .email-contacto {
+        word-break: break-word;
+        overflow-wrap: anywhere;
+    }
+
+    #footer-info h5 {
+        font-size: 16px;
+    }
+
+    #acercaDe .titulo {
+        margin-top: 8px;
+    }
+
+    #acercaDe .final {
+        margin-top: 8px;
+        text-align: left;
+    }
+
+    .filtros .search-button, .filtros .btn-ordenar {
+        width: 25%;
+    }
+
+    .productoImg {
+        width: 80px;
+    }
+}

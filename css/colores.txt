@@ -1,0 +1,11 @@
+COLORES
+
+Azul más oscuro: #0A2540
+Azul muy oscuro: #0B1C2D
+Azul oscuro: #1C3147
+Azul oscuro botones: #102A43
+Azul medio oscuro: #3D6187
+Azul clarito: #F1F4FD
+Dorado: #C9A24D
+Dorado clarito: #D4AF37
+Gris: #F8F9FA
